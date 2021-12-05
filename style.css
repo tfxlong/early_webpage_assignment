@@ -1,0 +1,399 @@
+/* STYLE FOR ASSIGNMENT 1 */
+
+
+/* TASK HEADINGS */
+
+.task_headings {
+  color:red;
+  height: 20px;
+  width: 98%;      
+  margin: auto auto;
+  text-align: center;
+}
+.horizontal_lines {
+  /* Modified version of "Glyph, by Harry Roberts" <https://css-tricks.com/examples/hrs/>  */
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double rgb(45, 9, 145);
+  color: rgb(240, 51, 83);
+  text-align: center;
+}
+.horizontal_lines:after {
+  content: "* * * *";
+  display: inline-block;
+  position: relative;
+  top: -0.5em;
+  font-size: 1.0em;
+  padding: 0 0.25em;
+  background: white;
+}
+  
+/* HEADER AND NAVIGATION */
+
+#webpage_header {
+  background-color:rgb(44, 5, 80); 
+  height:100px; 
+  width:98%; 
+  padding: 10px 20px 70px 20px; 
+  vertical-align:top; 
+  color:white; 
+  border-bottom-style:solid; 
+  border-bottom-color:rgb(43, 185, 162);  
+}
+
+#header_central {  
+  text-align:center; 
+  margin: auto;  
+  /*margin-right:250px;
+  margin-left: 250px;*/
+  width: 300px;
+  border-radius: 20%;
+  background-color:rgb(44, 5, 80);
+  position:relative;
+  z-index: 1;
+}
+
+/* Navigation menu will disappear once screen a smaller width, so it won't get in the way*/
+@media only screen and (max-width: 750px) {
+  #navigation_sidebar {
+    display: none;
+  }  
+}
+
+
+#navigation_sidebar {
+  background-color:rgba(44, 5, 80, 0.8);
+  border-radius: 20%;
+  font-size: 15px; 
+  float:left; 
+  width: 180px;
+  height: 178px;
+  color:white; 
+  position:fixed;
+  margin-left: 50px;      
+}
+
+#navigation_sidebar a {color:rgb(250, 215, 234)}
+#navigation_sidebar a:hover {color:rgb(233, 107, 159)}
+
+/* LOGO */
+/* OPTIONAL INVERSION OF COLOUR AND MOVE INTO HEADER BAR, ON RHS
+#logo_block {
+  position: absolute;
+  right: 0px;
+  top: 220px;
+  filter:brightness(100);  
+}*/
+#logo_block {
+  position: absolute;
+  left: 0px;
+  top: 24px;       
+}
+
+/* Logo will disappear once screen a smaller width, so it won't get in the way*/
+@media only screen and (max-width: 525px) {
+  #logo_block {
+    display: none;
+  }  
+}
+
+#logo {
+  width: 200px;
+  
+}
+#logo:hover {
+  width: 203px;    
+}
+
+/* STARS */
+#stars {
+  visibility: hidden;
+  font-size: 70px;
+}
+
+#star1 {
+  color: rgb(144, 238, 255);
+  position: absolute;
+  top: 140px;
+  right: 450px
+}
+#star2 {
+  color: rgb(255, 159, 159);
+  position: absolute;
+  top: 200px;
+  right: 310px
+}
+#star3 {
+  color: white;
+  position: absolute;
+  top: 150px;
+  right: 240px;
+  font-size: 55px;
+}
+#star4 {
+  color: rgb(255, 255, 153);
+  position: absolute;
+  top: 220px;
+  right: 100px
+}
+#star5 {
+  color: pink;
+  position: absolute;
+  top: 140px;
+  right: 50px;
+  font-size: 55px;        
+}
+#star6 {
+    color: rgb(255, 254, 209);
+    position: absolute;
+    top: 200px;
+    right: 620px;
+    font-size: 60px;
+}
+#star7 {
+  color: rgb(255, 159, 159);
+  position: absolute;
+  top: 200px;
+  left: 600px
+}
+#star8 {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 490px;
+  font-size: 55px;
+}
+#star9 {
+  color: rgb(255, 255, 153);
+  position: absolute;
+  top: 220px;
+  left: 350px
+}
+#star10 {
+  color: pink;
+  position: absolute;
+  top: 140px;
+  left: 280px;
+  font-size: 55px;        
+}
+  
+/* TASK 2 STYLE => TABLE #1 - ACTIVITY DATE TABLE */
+
+#date_event_table {
+  margin:auto auto; 
+  border-spacing:0px; 
+  border-top-style:double; 
+  border-top-color:rgb(255, 218, 246); 
+  border-bottom:solid;
+  border-bottom-color: rgb(255, 218, 246);
+}
+
+#date_event_caption {padding-bottom: 15px; color: rebeccapurple;}
+
+#event_column {width:400px;}
+#date_column {width:250px}
+
+.table_heading {
+  height:40px; 
+  text-align: left; 
+  background-color: rebeccapurple; 
+  color:rgb(246, 241, 247); 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+.evenrow {
+  height:40px; 
+  background-color:rgb(255, 218, 246); 
+  color:rebeccapurple; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.oddrow {
+  height:40px;background-color: rgb(248, 245, 248); 
+  color:rebeccapurple; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* TASK 3 STYLE => TABLE #2 - VEGETABLE HEALTH TABLE */
+
+#vegetable_health_table {
+  margin:auto auto;
+  border-style: double; 
+  border-color: rgb(221, 221, 221);
+}
+
+.VB_table_heading {
+  background-color:rgb(111, 209, 111); 
+  color: rgb(1, 1, 19); 
+  height: 100px
+}
+
+.VB_table_body td {height:200px; color: green;}
+.VB_table_body img {
+  width:150px; 
+  height:150px; 
+  padding:5px; 
+  border-color:white lightgreen lightgray lightgray; 
+  border-style: solid; 
+  border-width: 3px 3px 8px 8px;
+}
+
+#vegetable_heading {
+  width:250px; 
+  text-align: center;}   
+#benefits_heading {width:350px;}
+    
+.VB_evenrow {
+  background-color:rgb(222, 255, 218); 
+  text-align: center;
+}
+.VB_oddrow {
+  background-color: rgb(245, 248, 246); 
+  text-align: center;
+}
+
+.benefits_data_column {
+  text-align: left; 
+  padding-left: 20px; 
+  vertical-align: top;}
+
+.para_info_link {vertical-align: bottom;}
+.vege_links {color:green}
+
+#under_table_comments {
+  background-color:rgb(255, 218, 246); 
+  border-color:lightpink; 
+  border-style:solid; 
+  border-width: 1px; 
+  padding:19px; 
+  font-size: 15px; 
+  text-align: justify; 
+  width:580px; 
+  margin:auto auto; 
+  color:darkgreen;
+}
+
+#under_table_comments a {
+  color:inherit;
+  text-decoration: inherit;
+  }
+
+#under_table_comments a:hover {
+  font-weight: 550;   /* Convention is to increment in 100's but I just wanted a slight increase for hover effect */   
+  }
+
+/* TASK 4 STYLE */  
+
+#main_content {
+  background-color:rgb(1, 35, 58); 
+  border-color:rgb(240, 153, 252);
+  border-radius: 3%;
+  border-width: 6px;
+  width: 600px; 
+  height: 675px;
+  text-align: center; 
+  margin: auto;
+}
+
+#main_content h2,h3 {color:ghostwhite}
+
+.my_buttons button {
+  border-width: 10px; 
+  border-color:slategrey; 
+  padding: 10px; 
+  width: 100px; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  background-color:mintcream;
+}
+
+button:hover {
+  border-color:rgb(235, 217, 57); 
+  background-color:palegoldenrod;
+}
+/*WE CAN USE A SPECIFIC REFERENCE TO THE FROG_BUTTON TO OVERRIDE THE BUTTON PARENT*/
+#dog_button:hover {
+  border-color:rgb(206, 24, 0); 
+  background-color:rgb(247, 208, 208);
+}
+
+#frog_button:hover {
+  border-color:forestgreen; 
+  background-color:lightgreen;
+}
+
+#my_textfield{
+  text-align: center;
+  width: 200px;
+  max-width: 200px;
+  height:25px;
+  max-height: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(1, 35, 58);
+  border:double;
+  border-width:2px;
+  border-color: white;
+}
+
+#my_span{
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+  color:white;
+}
+
+#my_image{
+  width: 450px; 
+  height: 300px;
+  border-radius: 5%;
+}  
+
+#fun_button1,
+#fun_button2,
+#fun_button3 {
+  display: none;
+  border-width: 5px; 
+  border-color:yellow; 
+  padding: 10px; 
+  width: 200px; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  background-color:rgb(255, 251, 255);
+}
+    
+#fun_button_section button:hover {
+  border-color: rgb(255, 255, 51);
+  background-color: rgb(255, 255, 197);      
+}
+
+#fun_span1a,
+#fun_span1b,
+#fun_span2a,
+#fun_span2b,
+#fun_span3a,
+#fun_span3b {
+  display: none;
+  font-size: 30px;
+}
+
+#credit {
+  text-align: center;
+  text-decoration: italic; 
+  color:ghostwhite
+}
+
+/* FOOTER */
+
+#my_footer {
+  background-color:rgb(44, 5, 80); 
+  height:20px; 
+  width:98%; 
+  padding: 10px 20px 40px 20px; 
+  vertical-align:top; 
+  color:white; 
+  border-top-style:solid; 
+  border-top-color:rgb(43, 185, 162);
+}
+
+#my_footer a {
+  color:inherit;
+  font-style: inherit;
+}
